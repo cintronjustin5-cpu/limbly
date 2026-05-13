@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Limbly companion mark">
+  <title>Limbly — Companion Mark</title>
+  <!--
+    THE COMPANION MARK (Redesigned)
+    Circle = the wearer, whole and complete
+    Prosthetic leg silhouette = the accessory, the maker's work
+    Socket (top) narrows to pylon (middle) widens to foot plate (bottom)
+    They fit together — distinct, not merged
+    Small dot = the human at the center of every product
+  -->
+  <g transform="translate(50,50)">
+    <!-- Outer circle: the wearer -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+    <!-- Prosthetic lower-leg cover silhouette: socket → pylon → foot plate -->
+    <path d="
+      M 7,-27
+      C 7,-33 -7,-33 -7,-27
+      L -7,-19
+      C -9,-13 -14,-3 -14,6
+      C -14,15 -9,22 -9,25
+      L -12,27
+      C -12,31 12,31 12,27
+      L 9,25
+      C 9,22 14,15 14,6
+      C 14,-3 9,-13 7,-19
+      L 7,-27
+      Z
+    " fill="#E2725B"/>
+    <!-- Human dot: connection point at socket opening -->
+    <circle cx="0" cy="-22" r="4" fill="#FAFAF7"/>
+  </g>
+</svg>

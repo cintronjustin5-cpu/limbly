@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120" role="img" aria-label="Limbly">
+  <title>Limbly</title>
+  <!-- Dark logo: black mark + wordmark on cream background baked in -->
+  <rect width="480" height="120" rx="8" fill="#F5F1E8"/>
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#1A1A1A" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="
+      M 6.7,-25.7
+      C 6.7,-31.4 -6.7,-31.4 -6.7,-25.7
+      L -6.7,-18.1
+      C -8.6,-12.4 -13.3,-2.9 -13.3,5.7
+      C -13.3,14.3 -8.6,20.9 -8.6,23.8
+      L -11.4,25.7
+      C -11.4,29.5 11.4,29.5 11.4,25.7
+      L 8.6,23.8
+      C 8.6,20.9 13.3,14.3 13.3,5.7
+      C 13.3,-2.9 8.6,-12.4 6.7,-18.1
+      L 6.7,-25.7
+      Z
+    " fill="#E2725B"/>
+    <circle cx="0" cy="-20.9" r="3.8" fill="#FAFAF7"/>
+  </g>
+  <text
+    x="122"
+    y="76"
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-size="60"
+    font-weight="800"
+    fill="#1A1A1A"
+    letter-spacing="-2"
+  >limbly</text>
+</svg>

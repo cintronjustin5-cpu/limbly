@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Limbly">
+  <title>Limbly</title>
+  <rect width="32" height="32" rx="6" fill="#1A1A1A"/>
+  <g transform="translate(16,16)">
+    <!-- Simplified prosthetic leg mark for small sizes: heavier stroke -->
+    <circle cx="0" cy="0" r="11.5" fill="none" stroke="#F5F1E8" stroke-width="2"/>
+    <path d="
+      M 2,-8.5
+      C 2,-10 -2,-10 -2,-8.5
+      L -2,-5.5
+      C -2.8,-3.8 -4.5,-1 -4.5,2
+      C -4.5,5 -2.8,7 -2.8,8
+      L -3.8,8.8
+      C -3.8,10.2 3.8,10.2 3.8,8.8
+      L 2.8,8
+      C 2.8,7 4.5,5 4.5,2
+      C 4.5,-1 2.8,-3.8 2,-5.5
+      L 2,-8.5 Z
+    " fill="#E2725B"/>
+  </g>
+</svg>

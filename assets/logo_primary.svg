@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110" role="img" aria-label="Limbly">
+  <title>Limbly</title>
+  <!-- Companion Mark — centered vertically in 110px height, mark at left in ~110×110 space -->
+  <g transform="translate(55,55)">
+    <!-- Outer circle: the wearer -->
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#1A1A1A" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Prosthetic lower-leg cover silhouette (scaled 40/42 ≈ 0.95 of mark-only) -->
+    <path d="
+      M 6.7,-25.7
+      C 6.7,-31.4 -6.7,-31.4 -6.7,-25.7
+      L -6.7,-18.1
+      C -8.6,-12.4 -13.3,-2.9 -13.3,5.7
+      C -13.3,14.3 -8.6,20.9 -8.6,23.8
+      L -11.4,25.7
+      C -11.4,29.5 11.4,29.5 11.4,25.7
+      L 8.6,23.8
+      C 8.6,20.9 13.3,14.3 13.3,5.7
+      C 13.3,-2.9 8.6,-12.4 6.7,-18.1
+      L 6.7,-25.7
+      Z
+    " fill="#E2725B"/>
+    <!-- Human dot at socket opening -->
+    <circle cx="0" cy="-20.9" r="3.8" fill="#FAFAF7"/>
+  </g>
+  <!-- Wordmark: "limbly" -->
+  <text
+    x="118"
+    y="72"
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-size="60"
+    font-weight="800"
+    fill="#1A1A1A"
+    letter-spacing="-2"
+  >limbly</text>
+</svg>
