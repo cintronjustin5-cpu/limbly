@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Statement — Limbly</title>
+  <meta name="description" content="Limbly's commitment to digital accessibility. We aim for WCAG 2.1 AA compliance and welcome feedback on barriers.">
+  <meta property="og:title" content="Accessibility Statement — Limbly">
+  <meta property="og:description" content="Limbly's commitment to accessible design and how to report barriers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://limbly.com/accessibility.html">
+  <meta property="og:image" content="../assets/og-default.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Limbly — home">
+        <img src="../assets/logo_primary.svg" alt="Limbly" height="34">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="creators.html" class="nav-link">Creators</a></li>
+        <li><a href="custom.html" class="nav-link">Custom</a></li>
+        <li><a href="#" class="nav-link">Journal</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="My account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Shopping cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button id="nav-menu-btn" class="nav-icon-btn nav-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <a href="shop.html" class="mobile-nav-link">Shop</a>
+    <div class="mobile-nav-sub">
+      <a href="shop.html">All Products</a>
+      <a href="shop.html#leg-covers">Leg Covers</a>
+      <a href="shop.html#arm-covers">Arm Covers</a>
+      <a href="shop.html#hand-accessories">Hand Accessories</a>
+      <a href="shop.html#socket-art">Socket Art</a>
+      <a href="shop.html#new-arrivals">New Arrivals</a>
+    </div>
+    <a href="creators.html" class="mobile-nav-link">Creators</a>
+    <a href="custom.html" class="mobile-nav-link">Custom Orders</a>
+    <a href="#" class="mobile-nav-link">Journal</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="help.html" class="mobile-nav-link">Help</a>
+    <a href="apply.html" class="mobile-nav-link">Apply to Sell</a>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="legal-page">
+    <div class="container container--narrow">
+
+      <header class="legal-header">
+        <h1>Accessibility Statement</h1>
+        <p class="legal-updated">Last updated: <time datetime="2026-01-01">January 1, 2026</time></p>
+      </header>
+
+      <div class="prose">
+
+        <h2>Our commitment</h2>
+
+        <p>Limbly is built by and for the limb-different community. Accessibility isn't an afterthought here — it's a core design principle. Many of our users, team members, and creators live with disabilities of various kinds, and we take our responsibility to make this site fully usable by everyone seriously.</p>
+
+        <p>We aim to meet the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</strong> across the entire Limbly website. These guidelines explain how to make web content more accessible to people with disabilities, including those using screen readers, keyboard navigation, switch access, voice control, magnification software, and other assistive technologies.</p>
+
+        <h2>What we've done</h2>
+
+        <p>To meet our accessibility goals, we have implemented the following practices across all pages of the Limbly site:</p>
+
+        <ul>
+          <li><strong>Skip-to-content links</strong> on every page, allowing keyboard and assistive technology users to bypass navigation and jump directly to main content.</li>
+          <li><strong>Semantic HTML5</strong> throughout, including proper use of landmark regions (<code>nav</code>, <code>main</code>, <code>footer</code>, <code>aside</code>), heading hierarchy, lists, tables, and form elements.</li>
+          <li><strong>Logical heading hierarchy</strong> on every page, with a single H1 per page and sequential heading levels (H2, H3) that reflect content structure.</li>
+          <li><strong>ARIA labels and descriptions</strong> on all interactive elements — buttons, form fields, accordions, carousels, and modal dialogs.</li>
+          <li><strong>Descriptive alt text</strong> on all meaningful images. Decorative images are marked <code>aria-hidden="true"</code>.</li>
+          <li><strong>Color contrast</strong> that meets or exceeds WCAG AA ratios (4.5:1 for normal text, 3:1 for large text and UI components) across all color combinations used on the site.</li>
+          <li><strong>No color-only information</strong> — all information conveyed by color is also communicated through text, shape, or other non-color means.</li>
+          <li><strong>Fully keyboard-navigable</strong> interface — all functionality available by mouse is also available using a keyboard alone. Focus indicators are visible on all interactive elements.</li>
+          <li><strong>Focus management</strong> in interactive components such as mobile navigation, modal dialogs, and accordions.</li>
+          <li><strong>Form accessibility</strong> — all form inputs have associated labels, required fields are identified, and error messages are programmatically associated with the relevant inputs using <code>aria-describedby</code>.</li>
+          <li><strong>Live regions</strong> for dynamic content updates — cart counts, search results, and form feedback use <code>aria-live</code> regions so screen reader users are notified of changes.</li>
+          <li><strong>Responsive design</strong> that reflows content at 400% zoom without requiring horizontal scrolling and that works in portrait and landscape orientations.</li>
+          <li><strong>No content that flashes more than 3 times per second</strong>, in compliance with WCAG guideline 2.3.</li>
+          <li><strong>Text resize</strong> up to 200% without loss of content or functionality.</li>
+        </ul>
+
+        <h2>Assistive technology support</h2>
+
+        <p>We test Limbly with the following assistive technologies as part of our development and QA process:</p>
+
+        <ul>
+          <li>NVDA (Windows) with Chrome</li>
+          <li>VoiceOver (macOS) with Safari</li>
+          <li>VoiceOver (iOS) with Safari</li>
+          <li>TalkBack (Android) with Chrome</li>
+          <li>Keyboard-only navigation (no screen reader)</li>
+          <li>Windows High Contrast Mode</li>
+        </ul>
+
+        <h2>Known limitations</h2>
+
+        <p>Despite our efforts, we are aware of the following current limitations. We are actively working to resolve them.</p>
+
+        <ul>
+          <li><strong>Third-party embedded content:</strong> Some product videos embedded from external platforms (such as YouTube) may not fully meet WCAG AA standards. We are working to ensure captions are enabled on all embedded videos. Where possible, we provide transcripts as an alternative.</li>
+          <li><strong>Creator-submitted listing images:</strong> Product images uploaded by Creators may not always include Limbly-authored alt text. We provide guidance to Creators on writing descriptive alt text and review listings for accessibility, but this remains an ongoing effort rather than a fully solved problem.</li>
+          <li><strong>PDF documents:</strong> Any PDF documents linked from the site may not be fully accessible to all assistive technologies. We are transitioning PDF content to accessible HTML pages wherever possible.</li>
+          <li><strong>Interactive filter components:</strong> The shop filter sidebar uses a complex interactive pattern that is fully functional but may present a suboptimal experience for some screen reader users in certain browsers. We are working on an improved implementation.</li>
+        </ul>
+
+        <h2>How to report an accessibility issue</h2>
+
+        <p>If you encounter a barrier on the Limbly website that prevents you from accessing content or completing a task, please let us know. We take all accessibility reports seriously and aim to respond within 2 business days.</p>
+
+        <p>To report an accessibility issue, please contact us at:</p>
+
+        <address>
+          <strong>Email:</strong> <a href="mailto:accessibility@limbly.com">accessibility@limbly.com</a>
+        </address>
+
+        <p>When you contact us, please include:</p>
+        <ul>
+          <li>A description of the barrier you encountered</li>
+          <li>The URL of the page or feature where you experienced it</li>
+          <li>The assistive technology you were using, if applicable (screen reader name and version, browser, operating system)</li>
+          <li>Any steps to reproduce the issue, if known</li>
+        </ul>
+
+        <p>We will acknowledge your report within 2 business days and provide an estimated timeline for resolution.</p>
+
+        <h2>Enforcement and escalation</h2>
+
+        <p>If you are not satisfied with our response to an accessibility complaint, you may contact the relevant national or regional enforcement body. In the United States, you may file a complaint with the Department of Justice Civil Rights Division. In the UK, you may contact the Equality and Human Rights Commission. In the EU, you may contact your national accessibility enforcement body.</p>
+
+        <h2>Formal status</h2>
+
+        <p>This website is partially conformant with WCAG 2.1 Level AA. "Partially conformant" means that some parts of the content do not fully conform to the accessibility standard, as noted in the Known Limitations section above. We are actively working toward full conformance and will update this statement as improvements are made.</p>
+
+        <h2>Contact</h2>
+
+        <p>General accessibility questions may be directed to <a href="mailto:accessibility@limbly.com">accessibility@limbly.com</a>. Our accessibility team is part of our engineering and design function and is empowered to prioritize and address accessibility issues across the platform.</p>
+
+        <p>This statement was prepared on January 1, 2026, and is reviewed and updated at minimum annually, and whenever significant changes are made to the site.</p>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-signup">
+      <h2 class="h3 text-cream">Stay in the loop.</h2>
+      <p class="body-sm" style="color:var(--c-warm-gray);margin-top:8px;">New creators, new collections, and stories from the community.<br>No spam. No inspiration porn. Just good stuff.</p>
+      <form class="footer-signup-form js-signup-form" aria-label="Newsletter signup">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input type="email" id="footer-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-coral">Subscribe</button>
+      </form>
+      <p class="signup-feedback sr-only" role="status" hidden></p>
+      <p class="caption" style="color:var(--c-warm-gray);margin-top:10px;">We email about once a month. Unsubscribe anytime.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h3 class="footer-col-title">Shop</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="shop.html" class="footer-link">All Products</a></li>
+          <li><a href="shop.html#leg-covers" class="footer-link">Leg Covers</a></li>
+          <li><a href="shop.html#arm-covers" class="footer-link">Arm Covers</a></li>
+          <li><a href="shop.html#hand-accessories" class="footer-link">Hand Accessories</a></li>
+          <li><a href="shop.html#socket-art" class="footer-link">Socket Art</a></li>
+          <li><a href="custom.html" class="footer-link">Custom Orders</a></li>
+          <li><a href="#" class="footer-link">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Creators</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="creators.html" class="footer-link">Meet the Makers</a></li>
+          <li><a href="apply.html" class="footer-link">Apply to Sell</a></li>
+          <li><a href="#" class="footer-link">Creator Resources</a></li>
+          <li><a href="creators.html" class="footer-link">Featured Creators</a></li>
+          <li><a href="#" class="footer-link">Creator Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Help</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="help.html" class="footer-link">Contact Us</a></li>
+          <li><a href="help.html#shipping" class="footer-link">Shipping Info</a></li>
+          <li><a href="help.html#returns" class="footer-link">Returns Policy</a></li>
+          <li><a href="help.html#sizing" class="footer-link">Sizing Guide</a></li>
+          <li><a href="help.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Journal</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="accessibility.html" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="index.html" aria-label="Limbly — home">
+        <img src="../assets/logo_white.svg" alt="Limbly" class="footer-logo">
+      </a>
+      <p class="footer-copyright">© 2026 Limbly. Built by and for the limb-different community.</p>
+      <div class="footer-bottom-right">
+        <a href="terms.html" class="footer-legal-link">Terms</a>
+        <a href="privacy.html" class="footer-legal-link">Privacy</a>
+        <a href="accessibility.html" class="footer-legal-link">Accessibility</a>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Limbly on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Limbly on TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

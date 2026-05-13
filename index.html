@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limbly — A Marketplace for Prosthetic Accessories</title>
+  <meta name="description" content="A curated home for the makers redesigning what prosthetics can look like — and the people redefining what it means to wear one.">
+  <meta property="og:title" content="Limbly — A Marketplace for Prosthetic Accessories">
+  <meta property="og:description" content="A curated home for the makers redesigning what prosthetics can look like — and the people redefining what it means to wear one.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://limbly.com/">
+  <meta property="og:image" content="../assets/og-home.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Limbly — home">
+        <img src="../assets/logo_primary.svg" alt="Limbly" height="34">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="creators.html" class="nav-link">Creators</a></li>
+        <li><a href="custom.html" class="nav-link">Custom</a></li>
+        <li><a href="#" class="nav-link">Journal</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="My account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Shopping cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button id="nav-menu-btn" class="nav-icon-btn nav-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <a href="shop.html" class="mobile-nav-link">Shop</a>
+    <div class="mobile-nav-sub">
+      <a href="shop.html">All Products</a>
+      <a href="shop.html#leg-covers">Leg Covers</a>
+      <a href="shop.html#arm-covers">Arm Covers</a>
+      <a href="shop.html#hand-accessories">Hand Accessories</a>
+      <a href="shop.html#socket-art">Socket Art</a>
+      <a href="shop.html#new-arrivals">New Arrivals</a>
+    </div>
+    <a href="creators.html" class="mobile-nav-link">Creators</a>
+    <a href="custom.html" class="mobile-nav-link">Custom Orders</a>
+    <a href="#" class="mobile-nav-link">Journal</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="help.html" class="mobile-nav-link">Help</a>
+    <a href="apply.html" class="mobile-nav-link">Apply to Sell</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-bg">
+      <div class="img-placeholder img-placeholder--hero" aria-hidden="true">Hero image — colorful prosthetic leg covers arranged artfully</div>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow eyebrow--light">A MARKETPLACE FOR PROSTHETIC ACCESSORIES</p>
+        <h1 id="hero-heading" class="hero-heading">Prosthetics, personalized.</h1>
+        <p class="hero-body">A curated home for the makers redesigning what prosthetics can look like — and the people redefining what it means to wear one.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-coral">Shop the Collection</a>
+          <a href="creators.html" class="btn btn-outline-light">Meet the Creators</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Creators -->
+  <section class="section" aria-labelledby="featured-creators-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">FEATURED CREATORS</p>
+        <h2 id="featured-creators-heading">The people behind the pieces.</h2>
+        <p class="section-body">Every product on Limbly is made by an independent creator — an artist, engineer, or designer who knows firsthand what it means to live with a prosthetic.</p>
+      </div>
+      <div class="creator-grid creator-grid--4" role="list">
+
+        <article class="creator-card" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Sarah Chen's creator profile">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Sarah Chen, ceramic artist</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Sarah Chen</h3>
+              <p class="creator-card-specialty">Ceramic &amp; Resin Covers</p>
+              <p class="creator-card-location">Portland, OR</p>
+              <p class="creator-card-bio">Former occupational therapist turned full-time artist. Sarah creates slip-cast ceramic covers that feel like wearable sculpture.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Marcus Williams's creator profile">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Marcus Williams, textile designer</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Marcus Williams</h3>
+              <p class="creator-card-specialty">Textile &amp; Fabric Wraps</p>
+              <p class="creator-card-location">Atlanta, GA</p>
+              <p class="creator-card-bio">Textile designer and below-knee amputee. Marcus brings West African pattern traditions into everyday wearable accessories.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Priya Nair's creator profile">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Priya Nair, 3D printing specialist</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Priya Nair</h3>
+              <p class="creator-card-specialty">3D Printed Covers</p>
+              <p class="creator-card-location">Austin, TX</p>
+              <p class="creator-card-bio">Biomedical engineer and arm amputee who turned her master's thesis into a product line that's now worn in 14 countries.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Tomás Reyes's creator profile">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Tomás Reyes, leather craftsman</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Tomás Reyes</h3>
+              <p class="creator-card-specialty">Leather &amp; Hardware</p>
+              <p class="creator-card-location">Denver, CO</p>
+              <p class="creator-card-bio">Third-generation leather worker. Tomás builds hand-stitched socket art and covers that age beautifully over years of use.</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+      <div class="section-footer">
+        <a href="creators.html" class="btn btn-secondary">Meet All Creators</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section class="section section--cream" aria-labelledby="categories-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">SHOP BY CATEGORY</p>
+        <h2 id="categories-heading">Find what fits your life.</h2>
+      </div>
+      <div class="category-grid" role="list">
+
+        <article class="category-card" role="listitem">
+          <a href="shop.html#leg-covers" class="category-card-link" aria-label="Shop Leg Covers">
+            <div class="category-card-img">
+              <div class="img-placeholder" aria-hidden="true">Collection of colorful prosthetic leg covers</div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Leg Covers</h3>
+              <p class="category-card-count">142 products</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="category-card" role="listitem">
+          <a href="shop.html#arm-covers" class="category-card-link" aria-label="Shop Arm Covers">
+            <div class="category-card-img">
+              <div class="img-placeholder" aria-hidden="true">Artistic arm prosthetic covers in various styles</div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Arm Covers</h3>
+              <p class="category-card-count">89 products</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="category-card" role="listitem">
+          <a href="shop.html#hand-accessories" class="category-card-link" aria-label="Shop Hand Accessories">
+            <div class="category-card-img">
+              <div class="img-placeholder" aria-hidden="true">Decorative hand and finger prosthetic accessories</div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Hand Accessories</h3>
+              <p class="category-card-count">57 products</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="category-card" role="listitem">
+          <a href="shop.html#socket-art" class="category-card-link" aria-label="Shop Socket Art">
+            <div class="category-card-img">
+              <div class="img-placeholder" aria-hidden="true">Beautifully decorated prosthetic sockets with artwork</div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Socket Art</h3>
+              <p class="category-card-count">34 products</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Limbly -->
+  <section class="section" aria-labelledby="why-limbly-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">WHY LIMBLY</p>
+        <h2 id="why-limbly-heading">Built differently, on purpose.</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="why-title">Curated for quality</h3>
+          <p class="why-body">Every creator on Limbly is vetted. We review materials, construction, and fit compatibility before anyone can list. No mass-produced knockoffs. No cheap rebrands.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="why-title">Community-first commerce</h3>
+          <p class="why-body">The majority of every sale goes directly to the creator. Limbly takes a modest platform fee — just enough to keep the lights on, the curation tight, and the community growing.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="why-title">By and for the community</h3>
+          <p class="why-body">Limbly was founded by a bilateral below-knee amputee who got tired of beige. Our advisors, testers, and most of our team are limb-different. We make decisions accordingly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section section--cream" id="new-arrivals" aria-labelledby="new-arrivals-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">NEW ARRIVALS</p>
+        <h2 id="new-arrivals-heading">Just dropped.</h2>
+      </div>
+      <div class="product-grid product-grid--4" role="list">
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Coral Wave Transtibial Cover by Sarah Chen">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Coral Wave Transtibial Cover — ceramic prosthetic cover with coral wave pattern</div>
+              <span class="product-badge product-badge--new">New</span>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Sarah Chen</p>
+              <h3 class="product-card-name">Coral Wave Transtibial Cover</h3>
+              <p class="product-card-price">$185</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Coral Wave Transtibial Cover to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Kente Wrap Series No. 3 by Marcus Williams">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Kente Wrap Series No. 3 — fabric wrap with traditional Kente pattern</div>
+              <span class="product-badge product-badge--new">New</span>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Marcus Williams</p>
+              <h3 class="product-card-name">Kente Wrap Series No. 3</h3>
+              <p class="product-card-price">$95</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Kente Wrap Series No. 3 to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Lattice Arm Shell by Priya Nair">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Lattice Arm Shell — 3D printed geometric lattice arm cover</div>
+              <span class="product-badge product-badge--new">New</span>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Priya Nair</p>
+              <h3 class="product-card-name">Lattice Arm Shell</h3>
+              <p class="product-card-price">$220</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Lattice Arm Shell to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Mesa Leather Socket Wrap by Tomás Reyes">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Mesa Leather Socket Wrap — hand-tooled leather prosthetic socket wrap</div>
+              <span class="product-badge product-badge--new">New</span>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Tomás Reyes</p>
+              <h3 class="product-card-name">Mesa Leather Socket Wrap</h3>
+              <p class="product-card-price">$310</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Mesa Leather Socket Wrap to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Midnight Garden Leg Cover by Elena Vasquez">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Midnight Garden Leg Cover — dark floral painted prosthetic cover</div>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Elena Vasquez</p>
+              <h3 class="product-card-name">Midnight Garden Leg Cover</h3>
+              <p class="product-card-price">$155</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Midnight Garden Leg Cover to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Circuit Board Transfemoral Shell by Dev Kapoor">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Circuit Board Transfemoral Shell — 3D printed circuit board patterned above-knee cover</div>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Dev Kapoor</p>
+              <h3 class="product-card-name">Circuit Board Transfemoral Shell</h3>
+              <p class="product-card-price">$265</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Circuit Board Transfemoral Shell to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Birch Bark Wrist Cover by Anika Johansson">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Birch Bark Wrist Cover — wood-textured resin wrist prosthetic cover</div>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Anika Johansson</p>
+              <h3 class="product-card-name">Birch Bark Wrist Cover</h3>
+              <p class="product-card-price">$140</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Birch Bark Wrist Cover to cart">Add to Cart</button>
+        </article>
+
+        <article class="product-card" role="listitem">
+          <a href="product.html" class="product-card-link" aria-label="View Tide Pool Ankle Cuff by Milo Takahashi">
+            <div class="product-card-img">
+              <div class="img-placeholder" aria-hidden="true">Tide Pool Ankle Cuff — ocean-inspired decorative ankle prosthetic cuff</div>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-creator">Milo Takahashi</p>
+              <h3 class="product-card-name">Tide Pool Ankle Cuff</h3>
+              <p class="product-card-price">$78</p>
+            </div>
+          </a>
+          <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Tide Pool Ankle Cuff to cart">Add to Cart</button>
+        </article>
+
+      </div>
+      <div class="section-footer">
+        <a href="shop.html" class="btn btn-secondary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journal Preview -->
+  <section class="section" aria-labelledby="journal-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">FROM THE JOURNAL</p>
+        <h2 id="journal-heading">Stories from the community.</h2>
+      </div>
+      <div class="journal-grid" role="list">
+
+        <article class="journal-card" role="listitem">
+          <a href="#" class="journal-card-link" aria-label="Read: How I turned my socket into a canvas">
+            <div class="journal-card-img">
+              <div class="img-placeholder" aria-hidden="true">Close-up of a painted prosthetic socket featuring abstract art</div>
+            </div>
+            <div class="journal-card-body">
+              <p class="journal-card-category">Creator Spotlight</p>
+              <h3 class="journal-card-title">How I turned my socket into a canvas</h3>
+              <p class="journal-card-excerpt">Sarah Chen on the moment she realized her prosthetic was the most interesting thing in the room — and decided to lean in.</p>
+              <p class="journal-card-meta"><time datetime="2026-04-15">April 15, 2026</time> · 6 min read</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="journal-card" role="listitem">
+          <a href="#" class="journal-card-link" aria-label="Read: The sizing problem nobody talks about">
+            <div class="journal-card-img">
+              <div class="img-placeholder" aria-hidden="true">Prosthetic fitting session with a specialist measuring a patient</div>
+            </div>
+            <div class="journal-card-body">
+              <p class="journal-card-category">Community</p>
+              <h3 class="journal-card-title">The sizing problem nobody talks about</h3>
+              <p class="journal-card-excerpt">Why getting aftermarket accessories to fit is still so hard — and what Limbly creators are doing to change it.</p>
+              <p class="journal-card-meta"><time datetime="2026-04-02">April 2, 2026</time> · 8 min read</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="journal-card" role="listitem">
+          <a href="#" class="journal-card-link" aria-label="Read: From thesis to 14 countries: Priya Nair's origin story">
+            <div class="journal-card-img">
+              <div class="img-placeholder" aria-hidden="true">Priya Nair in her studio with 3D printing equipment and prosthetic covers</div>
+            </div>
+            <div class="journal-card-body">
+              <p class="journal-card-category">Maker Profile</p>
+              <h3 class="journal-card-title">From thesis to 14 countries: Priya Nair's origin story</h3>
+              <p class="journal-card-excerpt">A biomedical engineer who lost her arm at 19 and turned her frustration into a product line worn around the world.</p>
+              <p class="journal-card-meta"><time datetime="2026-03-21">March 21, 2026</time> · 10 min read</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+      <div class="section-footer">
+        <a href="#" class="btn btn-secondary">Read More Stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Signup -->
+  <section class="section section--dark" aria-labelledby="homepage-signup-heading">
+    <div class="container">
+      <div class="signup-banner">
+        <div class="signup-banner-copy">
+          <h2 id="homepage-signup-heading" class="text-cream">Stay in the loop.</h2>
+          <p style="color:var(--c-warm-gray);">New creators, new collections, and stories from the community. No spam. No inspiration porn. Just good stuff.</p>
+        </div>
+        <form class="signup-banner-form js-signup-form" aria-label="Newsletter signup">
+          <label for="hero-email" class="sr-only">Email address</label>
+          <input type="email" id="hero-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+          <button type="submit" class="btn btn-coral">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-signup">
+      <h2 class="h3 text-cream">Stay in the loop.</h2>
+      <p class="body-sm" style="color:var(--c-warm-gray);margin-top:8px;">New creators, new collections, and stories from the community.<br>No spam. No inspiration porn. Just good stuff.</p>
+      <form class="footer-signup-form js-signup-form" aria-label="Newsletter signup">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input type="email" id="footer-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-coral">Subscribe</button>
+      </form>
+      <p class="signup-feedback sr-only" role="status" hidden></p>
+      <p class="caption" style="color:var(--c-warm-gray);margin-top:10px;">We email about once a month. Unsubscribe anytime.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h3 class="footer-col-title">Shop</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="shop.html" class="footer-link">All Products</a></li>
+          <li><a href="shop.html#leg-covers" class="footer-link">Leg Covers</a></li>
+          <li><a href="shop.html#arm-covers" class="footer-link">Arm Covers</a></li>
+          <li><a href="shop.html#hand-accessories" class="footer-link">Hand Accessories</a></li>
+          <li><a href="shop.html#socket-art" class="footer-link">Socket Art</a></li>
+          <li><a href="custom.html" class="footer-link">Custom Orders</a></li>
+          <li><a href="#" class="footer-link">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Creators</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="creators.html" class="footer-link">Meet the Makers</a></li>
+          <li><a href="apply.html" class="footer-link">Apply to Sell</a></li>
+          <li><a href="#" class="footer-link">Creator Resources</a></li>
+          <li><a href="creators.html" class="footer-link">Featured Creators</a></li>
+          <li><a href="#" class="footer-link">Creator Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Help</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="help.html" class="footer-link">Contact Us</a></li>
+          <li><a href="help.html#shipping" class="footer-link">Shipping Info</a></li>
+          <li><a href="help.html#returns" class="footer-link">Returns Policy</a></li>
+          <li><a href="help.html#sizing" class="footer-link">Sizing Guide</a></li>
+          <li><a href="help.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Journal</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="accessibility.html" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="index.html" aria-label="Limbly — home">
+        <img src="../assets/logo_white.svg" alt="Limbly" class="footer-logo">
+      </a>
+      <p class="footer-copyright">© 2026 Limbly. Built by and for the limb-different community.</p>
+      <div class="footer-bottom-right">
+        <a href="terms.html" class="footer-legal-link">Terms</a>
+        <a href="privacy.html" class="footer-legal-link">Privacy</a>
+        <a href="accessibility.html" class="footer-legal-link">Accessibility</a>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Limbly on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Limbly on TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

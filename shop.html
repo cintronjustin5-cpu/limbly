@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Limbly Prosthetic Accessories</title>
+  <meta name="description" content="Browse our curated collection of prosthetic accessories — leg covers, arm covers, hand accessories, and socket art from independent creators.">
+  <meta property="og:title" content="Shop — Limbly Prosthetic Accessories">
+  <meta property="og:description" content="Browse our curated collection of prosthetic accessories from independent creators.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://limbly.com/shop.html">
+  <meta property="og:image" content="../assets/og-shop.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Limbly — home">
+        <img src="../assets/logo_primary.svg" alt="Limbly" height="34">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html" class="nav-link nav-link--active" aria-current="page">Shop</a></li>
+        <li><a href="creators.html" class="nav-link">Creators</a></li>
+        <li><a href="custom.html" class="nav-link">Custom</a></li>
+        <li><a href="#" class="nav-link">Journal</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="My account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Shopping cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button id="nav-menu-btn" class="nav-icon-btn nav-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <a href="shop.html" class="mobile-nav-link">Shop</a>
+    <div class="mobile-nav-sub">
+      <a href="shop.html">All Products</a>
+      <a href="shop.html#leg-covers">Leg Covers</a>
+      <a href="shop.html#arm-covers">Arm Covers</a>
+      <a href="shop.html#hand-accessories">Hand Accessories</a>
+      <a href="shop.html#socket-art">Socket Art</a>
+      <a href="shop.html#new-arrivals">New Arrivals</a>
+    </div>
+    <a href="creators.html" class="mobile-nav-link">Creators</a>
+    <a href="custom.html" class="mobile-nav-link">Custom Orders</a>
+    <a href="#" class="mobile-nav-link">Journal</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="help.html" class="mobile-nav-link">Help</a>
+    <a href="apply.html" class="mobile-nav-link">Apply to Sell</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- Shop Header -->
+  <section class="shop-header">
+    <div class="container">
+      <h1 class="shop-title">All Products</h1>
+      <p class="shop-subtitle">322 products from 47 independent creators</p>
+    </div>
+  </section>
+
+  <!-- Shop Layout -->
+  <div class="shop-layout">
+    <div class="container">
+      <div class="shop-inner">
+
+        <!-- Mobile Filter Toggle -->
+        <div class="shop-mobile-bar">
+          <button class="btn btn-secondary btn-sm js-filter-toggle" aria-expanded="false" aria-controls="shop-filters" aria-label="Show product filters">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            Filters
+          </button>
+          <div class="shop-topbar-sort">
+            <label for="sort-select-mobile" class="sr-only">Sort products</label>
+            <select id="sort-select-mobile" class="sort-select" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="best-selling">Best Selling</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Sidebar Filters -->
+        <aside id="shop-filters" class="shop-sidebar" aria-label="Product filters">
+          <div class="filter-header">
+            <h2 class="filter-heading">Filters</h2>
+            <button class="filter-clear js-filter-clear" aria-label="Clear all filters">Clear all</button>
+          </div>
+
+          <!-- Category -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Category</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="leg-covers" class="filter-checkbox">
+                <span class="filter-label">Leg Covers</span>
+                <span class="filter-count" aria-label="142 products">142</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="arm-covers" class="filter-checkbox">
+                <span class="filter-label">Arm Covers</span>
+                <span class="filter-count" aria-label="89 products">89</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="hand-accessories" class="filter-checkbox">
+                <span class="filter-label">Hand Accessories</span>
+                <span class="filter-count" aria-label="57 products">57</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="socket-art" class="filter-checkbox">
+                <span class="filter-label">Socket Art</span>
+                <span class="filter-count" aria-label="34 products">34</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Prosthetic Type -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Prosthetic Type</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="transtibial" class="filter-checkbox">
+                <span class="filter-label">Transtibial (Below Knee)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="transfemoral" class="filter-checkbox">
+                <span class="filter-label">Transfemoral (Above Knee)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="transradial" class="filter-checkbox">
+                <span class="filter-label">Transradial (Below Elbow)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="transhumeral" class="filter-checkbox">
+                <span class="filter-label">Transhumeral (Above Elbow)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="partial-foot" class="filter-checkbox">
+                <span class="filter-label">Partial Foot</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="prosthetic-type" value="partial-hand" class="filter-checkbox">
+                <span class="filter-label">Partial Hand / Finger</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Material -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Material</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="ceramic" class="filter-checkbox">
+                <span class="filter-label">Ceramic</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="resin" class="filter-checkbox">
+                <span class="filter-label">Resin</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="fabric" class="filter-checkbox">
+                <span class="filter-label">Fabric &amp; Textile</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="3d-printed" class="filter-checkbox">
+                <span class="filter-label">3D Printed</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="leather" class="filter-checkbox">
+                <span class="filter-label">Leather</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="silicone" class="filter-checkbox">
+                <span class="filter-label">Silicone</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="wood" class="filter-checkbox">
+                <span class="filter-label">Wood</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="material" value="metal" class="filter-checkbox">
+                <span class="filter-label">Metal</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Price Range -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Price</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="under-50" class="filter-checkbox">
+                <span class="filter-label">Under $50</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="50-100" class="filter-checkbox">
+                <span class="filter-label">$50 – $100</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="100-200" class="filter-checkbox">
+                <span class="filter-label">$100 – $200</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="200-400" class="filter-checkbox">
+                <span class="filter-label">$200 – $400</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="over-400" class="filter-checkbox">
+                <span class="filter-label">$400 and over</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Style -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Style</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="abstract" class="filter-checkbox">
+                <span class="filter-label">Abstract</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="floral" class="filter-checkbox">
+                <span class="filter-label">Floral &amp; Botanical</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="geometric" class="filter-checkbox">
+                <span class="filter-label">Geometric</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="cultural" class="filter-checkbox">
+                <span class="filter-label">Cultural Patterns</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="minimalist" class="filter-checkbox">
+                <span class="filter-label">Minimalist</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="nature" class="filter-checkbox">
+                <span class="filter-label">Nature &amp; Landscape</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="style" value="pop" class="filter-checkbox">
+                <span class="filter-label">Pop &amp; Graphic</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Customizable -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Options</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="options" value="customizable" class="filter-checkbox">
+                <span class="filter-label">Customizable</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="options" value="ready-to-ship" class="filter-checkbox">
+                <span class="filter-label">Ready to Ship</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="options" value="made-to-order" class="filter-checkbox">
+                <span class="filter-label">Made to Order</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Creator Location -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Creator Location</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="us" class="filter-checkbox">
+                <span class="filter-label">United States</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="canada" class="filter-checkbox">
+                <span class="filter-label">Canada</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="uk" class="filter-checkbox">
+                <span class="filter-label">United Kingdom</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="europe" class="filter-checkbox">
+                <span class="filter-label">Europe</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="australia" class="filter-checkbox">
+                <span class="filter-label">Australia &amp; NZ</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="location" value="other" class="filter-checkbox">
+                <span class="filter-label">Other</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Rating -->
+          <fieldset class="filter-group">
+            <legend class="filter-group-title">Rating</legend>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="rating" value="5" class="filter-checkbox">
+                <span class="filter-label">5 stars only</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="rating" value="4plus" class="filter-checkbox">
+                <span class="filter-label">4 stars &amp; up</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="rating" value="3plus" class="filter-checkbox">
+                <span class="filter-label">3 stars &amp; up</span>
+              </label>
+            </div>
+          </fieldset>
+
+        </aside>
+
+        <!-- Product Grid Area -->
+        <div class="shop-main">
+
+          <!-- Top Bar -->
+          <div class="shop-topbar">
+            <p class="shop-result-count" aria-live="polite" aria-atomic="true">Showing <strong>322</strong> products</p>
+            <div class="shop-topbar-sort">
+              <label for="sort-select" class="sort-label">Sort by:</label>
+              <select id="sort-select" class="sort-select" aria-label="Sort products">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="best-selling">Best Selling</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid product-grid--3" role="list" id="leg-covers">
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Coral Wave Transtibial Cover by Sarah Chen">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Coral Wave Transtibial Cover — ceramic prosthetic leg cover</div>
+                  <span class="product-badge product-badge--new">New</span>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Sarah Chen</p>
+                  <h2 class="product-card-name">Coral Wave Transtibial Cover</h2>
+                  <p class="product-card-price">$185</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Coral Wave Transtibial Cover to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Kente Wrap Series No. 3 by Marcus Williams">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Kente Wrap Series No. 3 — fabric wrap with traditional pattern</div>
+                  <span class="product-badge product-badge--new">New</span>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Marcus Williams</p>
+                  <h2 class="product-card-name">Kente Wrap Series No. 3</h2>
+                  <p class="product-card-price">$95</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Kente Wrap Series No. 3 to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem" id="arm-covers">
+              <a href="product.html" class="product-card-link" aria-label="View Lattice Arm Shell by Priya Nair">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Lattice Arm Shell — 3D printed geometric arm cover</div>
+                  <span class="product-badge product-badge--new">New</span>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Priya Nair</p>
+                  <h2 class="product-card-name">Lattice Arm Shell</h2>
+                  <p class="product-card-price">$220</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Lattice Arm Shell to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Mesa Leather Socket Wrap by Tomás Reyes">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Mesa Leather Socket Wrap — hand-tooled leather prosthetic wrap</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Tomás Reyes</p>
+                  <h2 class="product-card-name">Mesa Leather Socket Wrap</h2>
+                  <p class="product-card-price">$310</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Mesa Leather Socket Wrap to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Midnight Garden Leg Cover by Elena Vasquez">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Midnight Garden Leg Cover — dark floral prosthetic cover</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Elena Vasquez</p>
+                  <h2 class="product-card-name">Midnight Garden Leg Cover</h2>
+                  <p class="product-card-price">$155</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Midnight Garden Leg Cover to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Circuit Board Transfemoral Shell by Dev Kapoor">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Circuit Board Transfemoral Shell — circuit-patterned above-knee cover</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Dev Kapoor</p>
+                  <h2 class="product-card-name">Circuit Board Transfemoral Shell</h2>
+                  <p class="product-card-price">$265</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Circuit Board Transfemoral Shell to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem" id="hand-accessories">
+              <a href="product.html" class="product-card-link" aria-label="View Birch Bark Wrist Cover by Anika Johansson">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Birch Bark Wrist Cover — wood-textured resin wrist cover</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Anika Johansson</p>
+                  <h2 class="product-card-name">Birch Bark Wrist Cover</h2>
+                  <p class="product-card-price">$140</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Birch Bark Wrist Cover to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Tide Pool Ankle Cuff by Milo Takahashi">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Tide Pool Ankle Cuff — ocean-inspired decorative ankle cuff</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Milo Takahashi</p>
+                  <h2 class="product-card-name">Tide Pool Ankle Cuff</h2>
+                  <p class="product-card-price">$78</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Tide Pool Ankle Cuff to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem" id="socket-art">
+              <a href="product.html" class="product-card-link" aria-label="View Solar Flare Socket Art by Keiko Matsuda">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Solar Flare Socket Art — vibrant painted prosthetic socket art</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Keiko Matsuda</p>
+                  <h2 class="product-card-name">Solar Flare Socket Art</h2>
+                  <p class="product-card-price">$420</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Solar Flare Socket Art to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Indigo Batik Transtibial Wrap by Amara Diallo">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Indigo Batik Transtibial Wrap — indigo batik fabric prosthetic wrap</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Amara Diallo</p>
+                  <h2 class="product-card-name">Indigo Batik Transtibial Wrap</h2>
+                  <p class="product-card-price">$88</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Indigo Batik Transtibial Wrap to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Obsidian Finger Caps Set by Nora Brennan">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Obsidian Finger Caps Set — dark resin partial hand accessories</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Nora Brennan</p>
+                  <h2 class="product-card-name">Obsidian Finger Caps Set</h2>
+                  <p class="product-card-price">$62</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Obsidian Finger Caps Set to cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <a href="product.html" class="product-card-link" aria-label="View Pine Forest Transfemoral Cover by Lars Eriksen">
+                <div class="product-card-img">
+                  <div class="img-placeholder" aria-hidden="true">Pine Forest Transfemoral Cover — woodland-themed above-knee cover</div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-card-creator">Lars Eriksen</p>
+                  <h2 class="product-card-name">Pine Forest Transfemoral Cover</h2>
+                  <p class="product-card-price">$195</p>
+                </div>
+              </a>
+              <button class="btn btn-sm btn-secondary product-card-cta" aria-label="Add Pine Forest Transfemoral Cover to cart">Add to Cart</button>
+            </article>
+
+          </div>
+
+          <!-- Pagination -->
+          <nav class="pagination" aria-label="Product pages">
+            <a href="#" class="pagination-prev" aria-label="Previous page" aria-disabled="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </a>
+            <ol class="pagination-pages" role="list">
+              <li><a href="#" class="pagination-page pagination-page--active" aria-current="page" aria-label="Page 1">1</a></li>
+              <li><a href="#" class="pagination-page" aria-label="Page 2">2</a></li>
+              <li><a href="#" class="pagination-page" aria-label="Page 3">3</a></li>
+              <li><span class="pagination-ellipsis" aria-hidden="true">…</span></li>
+              <li><a href="#" class="pagination-page" aria-label="Page 27">27</a></li>
+            </ol>
+            <a href="#" class="pagination-next" aria-label="Next page">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-signup">
+      <h2 class="h3 text-cream">Stay in the loop.</h2>
+      <p class="body-sm" style="color:var(--c-warm-gray);margin-top:8px;">New creators, new collections, and stories from the community.<br>No spam. No inspiration porn. Just good stuff.</p>
+      <form class="footer-signup-form js-signup-form" aria-label="Newsletter signup">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input type="email" id="footer-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-coral">Subscribe</button>
+      </form>
+      <p class="signup-feedback sr-only" role="status" hidden></p>
+      <p class="caption" style="color:var(--c-warm-gray);margin-top:10px;">We email about once a month. Unsubscribe anytime.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h3 class="footer-col-title">Shop</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="shop.html" class="footer-link">All Products</a></li>
+          <li><a href="shop.html#leg-covers" class="footer-link">Leg Covers</a></li>
+          <li><a href="shop.html#arm-covers" class="footer-link">Arm Covers</a></li>
+          <li><a href="shop.html#hand-accessories" class="footer-link">Hand Accessories</a></li>
+          <li><a href="shop.html#socket-art" class="footer-link">Socket Art</a></li>
+          <li><a href="custom.html" class="footer-link">Custom Orders</a></li>
+          <li><a href="#" class="footer-link">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Creators</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="creators.html" class="footer-link">Meet the Makers</a></li>
+          <li><a href="apply.html" class="footer-link">Apply to Sell</a></li>
+          <li><a href="#" class="footer-link">Creator Resources</a></li>
+          <li><a href="creators.html" class="footer-link">Featured Creators</a></li>
+          <li><a href="#" class="footer-link">Creator Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Help</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="help.html" class="footer-link">Contact Us</a></li>
+          <li><a href="help.html#shipping" class="footer-link">Shipping Info</a></li>
+          <li><a href="help.html#returns" class="footer-link">Returns Policy</a></li>
+          <li><a href="help.html#sizing" class="footer-link">Sizing Guide</a></li>
+          <li><a href="help.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Journal</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="accessibility.html" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="index.html" aria-label="Limbly — home">
+        <img src="../assets/logo_white.svg" alt="Limbly" class="footer-logo">
+      </a>
+      <p class="footer-copyright">© 2026 Limbly. Built by and for the limb-different community.</p>
+      <div class="footer-bottom-right">
+        <a href="terms.html" class="footer-legal-link">Terms</a>
+        <a href="privacy.html" class="footer-legal-link">Privacy</a>
+        <a href="accessibility.html" class="footer-legal-link">Accessibility</a>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Limbly on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Limbly on TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

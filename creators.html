@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creators — Meet the Makers | Limbly</title>
+  <meta name="description" content="Meet the independent artists, engineers, and designers behind every Limbly product — all with a genuine connection to the limb-different community.">
+  <meta property="og:title" content="Creators — Meet the Makers | Limbly">
+  <meta property="og:description" content="Independent artists and designers making extraordinary prosthetic accessories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://limbly.com/creators.html">
+  <meta property="og:image" content="../assets/og-creators.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Limbly — home">
+        <img src="../assets/logo_primary.svg" alt="Limbly" height="34">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="creators.html" class="nav-link nav-link--active" aria-current="page">Creators</a></li>
+        <li><a href="custom.html" class="nav-link">Custom</a></li>
+        <li><a href="#" class="nav-link">Journal</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="My account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Shopping cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button id="nav-menu-btn" class="nav-icon-btn nav-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <a href="shop.html" class="mobile-nav-link">Shop</a>
+    <div class="mobile-nav-sub">
+      <a href="shop.html">All Products</a>
+      <a href="shop.html#leg-covers">Leg Covers</a>
+      <a href="shop.html#arm-covers">Arm Covers</a>
+      <a href="shop.html#hand-accessories">Hand Accessories</a>
+      <a href="shop.html#socket-art">Socket Art</a>
+      <a href="shop.html#new-arrivals">New Arrivals</a>
+    </div>
+    <a href="creators.html" class="mobile-nav-link">Creators</a>
+    <a href="custom.html" class="mobile-nav-link">Custom Orders</a>
+    <a href="#" class="mobile-nav-link">Journal</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="help.html" class="mobile-nav-link">Help</a>
+    <a href="apply.html" class="mobile-nav-link">Apply to Sell</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="page-hero page-hero--creators" aria-labelledby="creators-hero-heading">
+    <div class="container">
+      <div class="page-hero-content page-hero-content--text-only">
+        <p class="eyebrow">MEET THE MAKERS</p>
+        <h1 id="creators-hero-heading">Every piece starts with a person.</h1>
+        <p class="page-hero-body">All 47 Limbly creators are independent makers. Most are limb-different themselves. All of them are exceptional at what they do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter / Sort Bar -->
+  <section class="creators-filter-bar" aria-label="Filter and sort creators">
+    <div class="container">
+      <div class="creators-filter-inner">
+        <div class="creators-filter-chips" role="group" aria-label="Filter by specialty">
+          <button class="filter-chip filter-chip--active" aria-pressed="true">All Creators</button>
+          <button class="filter-chip" aria-pressed="false">Leg Covers</button>
+          <button class="filter-chip" aria-pressed="false">Arm Covers</button>
+          <button class="filter-chip" aria-pressed="false">Hand Accessories</button>
+          <button class="filter-chip" aria-pressed="false">Socket Art</button>
+          <button class="filter-chip" aria-pressed="false">Custom Orders</button>
+        </div>
+        <div class="creators-sort">
+          <label for="creators-sort" class="sort-label">Sort by:</label>
+          <select id="creators-sort" class="sort-select" aria-label="Sort creators">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="most-products">Most Products</option>
+            <option value="top-rated">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <p class="creators-result-count" aria-live="polite" aria-atomic="true">Showing <strong>47</strong> creators</p>
+    </div>
+  </section>
+
+  <!-- Creator Grid -->
+  <section class="section" aria-labelledby="creator-grid-heading">
+    <div class="container">
+      <h2 id="creator-grid-heading" class="sr-only">All Creators</h2>
+      <div class="creator-grid creator-grid--3" role="list">
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Sarah Chen's creator profile — Ceramic and Resin Covers, Portland OR">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Sarah Chen in her ceramic studio</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Sarah Chen</h3>
+              <p class="creator-card-specialty">Ceramic &amp; Resin Covers</p>
+              <p class="creator-card-location">Portland, OR · 24 products</p>
+              <p class="creator-card-bio">Former occupational therapist turned full-time artist. Sarah creates slip-cast ceramic covers that feel like wearable sculpture.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 4.9 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  4.9
+                </span>
+                <span class="creator-card-ships">Ships from US</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Marcus Williams's creator profile — Textile and Fabric Wraps, Atlanta GA">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Marcus Williams with fabric samples</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Marcus Williams</h3>
+              <p class="creator-card-specialty">Textile &amp; Fabric Wraps</p>
+              <p class="creator-card-location">Atlanta, GA · 18 products</p>
+              <p class="creator-card-bio">Textile designer and below-knee amputee. Marcus brings West African pattern traditions into everyday wearable accessories.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 4.8 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  4.8
+                </span>
+                <span class="creator-card-ships">Ships from US</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Priya Nair's creator profile — 3D Printed Covers, Austin TX">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Priya Nair next to 3D printing equipment</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Priya Nair</h3>
+              <p class="creator-card-specialty">3D Printed Covers</p>
+              <p class="creator-card-location">Austin, TX · 31 products</p>
+              <p class="creator-card-bio">Biomedical engineer and arm amputee who turned her master's thesis into a product line that's now worn in 14 countries.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 4.9 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  4.9
+                </span>
+                <span class="creator-card-ships">Ships worldwide</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Tomás Reyes's creator profile — Leather and Hardware, Denver CO">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Tomás Reyes working leather in his workshop</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Tomás Reyes</h3>
+              <p class="creator-card-specialty">Leather &amp; Hardware</p>
+              <p class="creator-card-location">Denver, CO · 12 products</p>
+              <p class="creator-card-bio">Third-generation leather worker. Tomás builds hand-stitched socket art and covers that age beautifully over years of use.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 5.0 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  5.0
+                </span>
+                <span class="creator-card-ships">Ships from US</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Elena Vasquez's creator profile — Hand-Painted Covers, Santa Fe NM">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Elena Vasquez painting a prosthetic cover in her studio</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Elena Vasquez</h3>
+              <p class="creator-card-specialty">Hand-Painted Covers</p>
+              <p class="creator-card-location">Santa Fe, NM · 15 products</p>
+              <p class="creator-card-bio">Muralist and below-elbow amputee whose intricate botanical and landscape paintings bring a gallery-quality presence to every cover.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 4.7 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  4.7
+                </span>
+                <span class="creator-card-ships">Ships from US</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="creator-card creator-card--full" role="listitem">
+          <a href="creator-profile.html" class="creator-card-link" aria-label="View Keiko Matsuda's creator profile — Socket Art and Resin, Kyoto Japan">
+            <div class="creator-card-img">
+              <div class="img-placeholder" aria-hidden="true">Portrait of Keiko Matsuda with her resin socket art pieces</div>
+            </div>
+            <div class="creator-card-body">
+              <h3 class="creator-card-name">Keiko Matsuda</h3>
+              <p class="creator-card-specialty">Socket Art &amp; Resin</p>
+              <p class="creator-card-location">Kyoto, Japan · 9 products</p>
+              <p class="creator-card-bio">Resin sculptor and prosthetist whose work blends traditional Japanese aesthetics with the technical demands of prosthetic hardware.</p>
+              <div class="creator-card-meta">
+                <span class="creator-card-rating" aria-label="Rated 4.9 out of 5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  4.9
+                </span>
+                <span class="creator-card-ships">Ships worldwide</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="section-footer">
+        <button class="btn btn-secondary js-load-more" aria-label="Load more creators">Load More Creators</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Become a Creator CTA -->
+  <section class="section section--dark" aria-labelledby="creator-cta-heading">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-copy">
+          <p class="eyebrow eyebrow--light">JOIN THE MARKETPLACE</p>
+          <h2 id="creator-cta-heading" class="text-cream">Make things? Sell them here.</h2>
+          <p style="color:var(--c-warm-gray);">Limbly is a curated marketplace — which means we're selective. But if you're making exceptional prosthetic accessories and want to reach a community that genuinely gets it, we want to hear from you.</p>
+          <ul class="cta-list" style="color:var(--c-warm-gray);">
+            <li>Keep the majority of every sale</li>
+            <li>Reach customers in 22+ countries</li>
+            <li>Join a community of makers who care about this work</li>
+            <li>Get support from our team on listings, photography, and sizing guides</li>
+          </ul>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="apply.html" class="btn btn-coral">Apply to Sell</a>
+          <a href="about.html" class="btn btn-outline-light">Learn More About Limbly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-signup">
+      <h2 class="h3 text-cream">Stay in the loop.</h2>
+      <p class="body-sm" style="color:var(--c-warm-gray);margin-top:8px;">New creators, new collections, and stories from the community.<br>No spam. No inspiration porn. Just good stuff.</p>
+      <form class="footer-signup-form js-signup-form" aria-label="Newsletter signup">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input type="email" id="footer-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-coral">Subscribe</button>
+      </form>
+      <p class="signup-feedback sr-only" role="status" hidden></p>
+      <p class="caption" style="color:var(--c-warm-gray);margin-top:10px;">We email about once a month. Unsubscribe anytime.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h3 class="footer-col-title">Shop</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="shop.html" class="footer-link">All Products</a></li>
+          <li><a href="shop.html#leg-covers" class="footer-link">Leg Covers</a></li>
+          <li><a href="shop.html#arm-covers" class="footer-link">Arm Covers</a></li>
+          <li><a href="shop.html#hand-accessories" class="footer-link">Hand Accessories</a></li>
+          <li><a href="shop.html#socket-art" class="footer-link">Socket Art</a></li>
+          <li><a href="custom.html" class="footer-link">Custom Orders</a></li>
+          <li><a href="#" class="footer-link">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Creators</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="creators.html" class="footer-link">Meet the Makers</a></li>
+          <li><a href="apply.html" class="footer-link">Apply to Sell</a></li>
+          <li><a href="#" class="footer-link">Creator Resources</a></li>
+          <li><a href="creators.html" class="footer-link">Featured Creators</a></li>
+          <li><a href="#" class="footer-link">Creator Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Help</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="help.html" class="footer-link">Contact Us</a></li>
+          <li><a href="help.html#shipping" class="footer-link">Shipping Info</a></li>
+          <li><a href="help.html#returns" class="footer-link">Returns Policy</a></li>
+          <li><a href="help.html#sizing" class="footer-link">Sizing Guide</a></li>
+          <li><a href="help.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="#" class="footer-link">Journal</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+          <li><a href="accessibility.html" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="index.html" aria-label="Limbly — home">
+        <img src="../assets/logo_white.svg" alt="Limbly" class="footer-logo">
+      </a>
+      <p class="footer-copyright">© 2026 Limbly. Built by and for the limb-different community.</p>
+      <div class="footer-bottom-right">
+        <a href="terms.html" class="footer-legal-link">Terms</a>
+        <a href="privacy.html" class="footer-legal-link">Privacy</a>
+        <a href="accessibility.html" class="footer-legal-link">Accessibility</a>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Limbly on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Limbly on TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
