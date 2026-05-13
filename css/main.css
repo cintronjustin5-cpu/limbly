@@ -830,16 +830,19 @@ h4, .h4 { font-size: var(--t-h4);   font-weight: 600; line-height: 1.3; }
 /* ============================================================
    FILTER SIDEBAR
    ============================================================ */
-.shop-layout {
+.shop-layout { padding: var(--sp-5) 0 var(--sp-8); }
+
+.shop-inner {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: var(--sp-5);
   align-items: start;
 }
-@media (max-width: 900px) { .shop-layout { grid-template-columns: 220px 1fr; } }
-@media (max-width: 720px) { .shop-layout { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .shop-inner { grid-template-columns: 220px 1fr; } }
+@media (max-width: 720px) { .shop-inner { grid-template-columns: 1fr; } }
 
-.filter-sidebar {
+.filter-sidebar,
+.shop-sidebar {
   position: sticky;
   top: calc(var(--nav-h) + var(--sp-3));
   max-height: calc(100vh - var(--nav-h) - var(--sp-5));
