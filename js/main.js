@@ -12,14 +12,23 @@ if (siteNav) {
 
 // ── Scroll reveal ─────────────────────────────────────────────────
 const revealObserver = new IntersectionObserver(
-  (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); revealObserver.unobserve(e.target); } }),
-  { threshold: 0.12 }
+  (entries) => entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('is-visible');
+      revealObserver.unobserve(e.target);
+    }
+  }),
+  { threshold: 0.08, rootMargin: '0px 0px 60px 0px' }
 );
 document.querySelectorAll('.product-card, .creator-card, .category-card, .journal-card, .why-item').forEach((el, i) => {
   el.classList.add('reveal');
-  el.style.transitionDelay = `${(i % 4) * 60}ms`;
+  el.style.transitionDelay = `${(i % 4) * 55}ms`;
   revealObserver.observe(el);
 });
+// Fallback: show everything after 1.5s if observer doesn't fire
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.is-visible)').forEach(el => el.classList.add('is-visible'));
+}, 1500);
 
 // ── Mobile navigation ──────────────────────────────────────────────
 const menuBtn  = document.getElementById('nav-menu-btn');
