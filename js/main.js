@@ -37,13 +37,13 @@ const revealObserver = new IntersectionObserver(
 );
 document.querySelectorAll('.will-animate').forEach(el => revealObserver.observe(el));
 
-// Safety fallback: show everything after 2s
+// Safety fallback: show everything after 1.2s
 setTimeout(() => {
   document.querySelectorAll('.will-animate').forEach(el => {
     el.classList.remove('will-animate');
     el.classList.add('is-visible');
   });
-}, 2000);
+}, 1200);
 
 // ── Mobile navigation ──────────────────────────────────────────────
 const menuBtn  = document.getElementById('nav-menu-btn');
