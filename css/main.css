@@ -2188,14 +2188,16 @@ h4, .h4 { font-size: var(--t-h4);   font-weight: 600; line-height: 1.3; }
 
 /* ── About page hero ──────────────────────────────────────── */
 .page-hero--about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-6);
-  align-items: center;
   padding: var(--sp-8) 0;
   background: var(--c-cream);
 }
-@media (max-width: 860px) { .page-hero--about { grid-template-columns: 1fr; } }
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-7);
+  align-items: center;
+}
+@media (max-width: 860px) { .about-hero-inner { grid-template-columns: 1fr; } }
 .about-hero-img {
   aspect-ratio: 4/3;
   border-radius: var(--r-xl);
@@ -2204,6 +2206,37 @@ h4, .h4 { font-size: var(--t-h4);   font-weight: 600; line-height: 1.3; }
   box-shadow: 0 8px 40px rgba(26,26,26,0.12);
 }
 .about-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-hero-copy h1 { margin-bottom: var(--sp-3); }
+.about-hero-copy .page-hero-subtitle { font-size: var(--t-body-lg); color: var(--c-warm-gray); line-height: 1.7; }
+
+/* ── About story text ─────────────────────────────────────── */
+.about-story p { color: var(--c-warm-gray); line-height: 1.85; margin-bottom: var(--sp-3); }
+.about-lead { font-size: var(--t-body-lg); font-weight: 500; color: var(--c-black) !important; line-height: 1.7; margin-bottom: var(--sp-4) !important; }
+
+/* ── Values ───────────────────────────────────────────────── */
+.value-item { padding: var(--sp-3) var(--sp-2); }
+.value-icon { margin-bottom: var(--sp-2); color: var(--c-coral); }
+.value-title { font-size: var(--t-h4); font-weight: 700; margin-bottom: 8px; color: var(--c-black); }
+.value-body { font-size: var(--t-sm); color: var(--c-warm-gray); line-height: 1.65; }
+
+/* ── Mark / brand section ─────────────────────────────────── */
+.mark-section {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--sp-7);
+  align-items: center;
+}
+@media (max-width: 760px) { .mark-section { grid-template-columns: 1fr; } }
+.mark-visual {
+  aspect-ratio: 4/3;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(26,26,26,0.10);
+}
+.mark-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mark-copy .eyebrow { margin-bottom: var(--sp-2); }
+.mark-copy h2 { margin-bottom: var(--sp-3); }
+.mark-copy p { color: var(--c-warm-gray); line-height: 1.8; margin-bottom: var(--sp-2); }
 
 /* ── CTA banner ───────────────────────────────────────────── */
 .cta-banner { text-align: center; padding: var(--sp-4) 0; }
