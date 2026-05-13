@@ -1,5 +1,25 @@
 /* Limbly — main.js
-   Handles: mobile nav, accordions, filter sidebar, gallery, signup feedback */
+   Handles: mobile nav, accordions, filter sidebar, gallery, signup feedback,
+            nav scroll shadow, scroll reveal */
+
+// ── Nav shadow on scroll ───────────────────────────────────────────
+const siteNav = document.querySelector('.site-nav');
+if (siteNav) {
+  const onScroll = () => siteNav.classList.toggle('is-scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// ── Scroll reveal ─────────────────────────────────────────────────
+const revealObserver = new IntersectionObserver(
+  (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); revealObserver.unobserve(e.target); } }),
+  { threshold: 0.12 }
+);
+document.querySelectorAll('.product-card, .creator-card, .category-card, .journal-card, .why-item').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${(i % 4) * 60}ms`;
+  revealObserver.observe(el);
+});
 
 // ── Mobile navigation ──────────────────────────────────────────────
 const menuBtn  = document.getElementById('nav-menu-btn');
